@@ -62,6 +62,15 @@ body {
     background-color: #aad4cf; 
 }
 
+main {
+    background-color: #d4e9e7;
+}
+
+footer {
+    background-color: #d4e9e7;
+}
+
+
 
 
 /* ========================================
@@ -70,6 +79,7 @@ body {
 .header {
     padding: 20px;
     text-align: center;
+    background-color: #d4e9e7;
 }
 
 /* Put title on image */
