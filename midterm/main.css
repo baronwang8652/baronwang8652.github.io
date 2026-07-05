@@ -1,0 +1,260 @@
+/* 
+Reset CSS v2.0 |
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========================================
+   UNIVERSAL SETTING
+   ======================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #aad4cf; 
+}
+
+
+
+/* ========================================
+   HEADER STYLES
+   ======================================== */
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Put title on image */
+.title-container {
+    position: relative;
+}
+
+/* title image styles*/
+.title-image {
+    float: middle;
+    max-width: 100%;
+    height: auto;
+} 
+
+/* title styles */
+.title { 
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border: none;
+}
+
+/* ========================================
+   NAVIGATION STYLES
+   ======================================== */
+.nav {
+    width: 100%;  
+}
+
+.nav ul { 
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    width: 33.33%;
+    padding: 10px;
+    border-left: 1px solid black;
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Georgia', serif;
+    color: black;
+}
+
+/* Remove border from first item */
+.nav li:first-child {
+    border-left: none;
+}
+
+/* Add nav hover styles */
+.nav li:hover {
+    background-color: #86cfc6;
+}
+
+.nav li:hover a {
+    background-color: #86cfc6;
+}
+
+/* ========================================
+   Section1:Life of a Starfish STYLES
+   ======================================== */
+.section1 {
+    width: 100%;
+    padding: 20px;
+}
+
+.section1 h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.section1 img {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.section1 p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #000;
+}
+
+/* ========================================
+   Section2:Facts About Starfish STYLES
+   ======================================== */
+
+.section2 {
+    width: 100%;
+    padding: 20px;
+}
+
+.section2 h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.section2 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section2 li {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #000;
+}
+
+/* ========================================
+   Section3:Contact to learn more STYLES
+   ======================================== */
+
+.section3 {
+    width: 100%;
+    padding: 20px;
+}
+
+.contact-form {
+ border: 1px solid #000;
+}
+
+/* Contact form styles */
+.section3 h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    background-color: white;
+    border:none;
+}
+
+/* Radio button styles */
+.radio-buttons h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.radio-buttons {
+    margin: 10px;
+    color: #000;
+}
+
+/* submit button styles */
+.submit-button {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* ========================================
+   Footer STYLES
+   ======================================== */
+.footer {
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    color: #000;
+}
