@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link  rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <nav class="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <form action="/search" method="GET" class="search-bar">
+                <input type="search" name="q" placeholder="Search" required>
+                <button type="submit">Search</button>
+            </form>
+            <img src="images/main-banner.jpg" alt="main-banner" class="main-banner">
+            <h1>Welcome to Three Star Media</h1>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="" class="cta-button">Connect with us</a>
+        </header>
+    
+        <main>
+            <section class="section1">
+                <img src="images/about-us.jpg" alt="about-us-banner" class="about-us-banner">
+                <h2>About Us</h2>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor   
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor   
+            </section>
+
+            <section class="section2">
+                <div class="our-service">
+                    <h2>Our Services</h2>
+                    <!-- 1.Digital Transformation card -->
+                    <article class="digital-transformation">
+                        <img src="images/digital.jpg" alt="digital-transformation-banner" class="digital-transformation-banner">
+                        <h3>Digital Transformation</h3>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="cta-button">Digital Plans</a>
+                    </article>
+
+                    <!-- 2.Marketing card -->
+                    <article class="marketing">
+                        <img src="images/marketing.jpg" alt="marketing-banner" class="marketing-banner">
+                        <h3>Marketing</h3>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="cta-button">Marketing Plans</a>
+                    </article>
+
+                    <!-- 3.Video Production card -->
+                    <article class="video-production">
+                        <img src="images/video.jpg" alt="video-production-banner" class="video-production-banner">
+                        <h3>Video Production</h3>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="cta-button">Video Plans</a>
+                    </article>
+
+                    <!-- 4.Web Development card -->
+                    <article class="web-development">
+                        <img src="images/web.jpg" alt="web-development-banner" class="web-development-banner">
+                        <h3>Web Development</h3>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="cta-button">Web Plans</a>
+                    </article>
+
+                    <!-- 5.Print card -->
+                    <article class="print">
+                        <img src="images/print.jpg" alt="print-banner" class="print-banner">
+                        <h3>Print Services</h3>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="cta-button">Print Plans</a>
+                    </article>
+
+                    <!-- 6.Our vision card -->
+                    <article class="our-vision">
+                        <img src="images/vision.jpg" alt="our-vision-banner" class="our-vision-banner">
+                        <h3>Our Vision</h3>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="cta-button">Learn More</a>
+                    </article>
+                    </article>
+                </div>  
+            </section>
+
+            <section class="section3">
+                <h2>Our Team</h2>
+                <!-- John Doe card -->
+                    <article class="John">
+                        <img src="images/john.jpg" alt="john-banner" class="john-banner">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                
+                <!-- Bob Rite card -->
+                    <article class="Bob">
+                        <img src="images/bob.jpg" alt="bob-banner" class="bob-banner">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-Owner</h4>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+            </section> 
+            
+            <section class="section4">
+                <h2 >Contact Us</h2>
+                <!-- Message Form -->
+                <article class="message">
+                    <h3>Send us a message</h3>
+                    <form action="/submit-message" method="POST" class="contact-form">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </article>
+
+                <!-- location -->
+                <article class="location">
+                    <h3>Location</h3>
+                    <div class="map-container">
+                    <iframe 
+                    src="https://www.google.com/maps/" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </article>
+
+                <!-- hours of operation -->
+                <article class="hours-of-operation">
+                    <h3>Hours of Operation</h3>
+                    <table class="hours">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9:00 AM - 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>                
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Three Star Media. All images are taken from Unsplash.</p>
+        </footer>
+    </div>
+</body>
+</html>
