@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
     <link  rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <img src="images/logo.png" alt="logo" class="logo">
             <nav class="nav">
+                <div class="logo-area">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                </div>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About Us</a></li>
@@ -18,20 +23,28 @@
                     <li><a href="">Team</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
+                <form action="/search" method="GET" class="search-bar">
+                    <input class="search-input" type="search" name="q" placeholder="Search" required>
+                    <button class="search-button" type="submit">Search</button>
+                </form>
             </nav>
-            <form action="/search" method="GET" class="search-bar">
-                <input type="search" name="q" placeholder="Search" required>
-                <button type="submit">Search</button>
-            </form>
-            <img src="images/main-banner.jpg" alt="main-banner" class="main-banner">
-            <h1>Welcome to Three Star Media</h1>
-            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="cta-button">Connect with us</a>
+
+            <div class="main-banner-container">
+                <img src="images/main-banner.jpg" alt="main-banner" class="main-banner">
+                <div class="overlay">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="" class="cta-button">Connect with us &#9654;</a>
+                </div>
+            </div>
+
         </header>
     
         <main>
             <section class="section1">
-                <img src="images/about-us.jpg" alt="about-us-banner" class="about-us-banner">
+                <div class="about-us-container">
+                    <img src="images/about-us.jpg" alt="about-us-banner" class="about-us-banner">
+                </div>
                 <h2>About Us</h2>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor   
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor   
@@ -45,7 +58,7 @@
                         <img src="images/digital.jpg" alt="digital-transformation-banner" class="digital-transformation-banner">
                         <h3>Digital Transformation</h3>
                         <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="" class="cta-button">Digital Plans</a>
+                        <a href="" class="cta-button">Digital Plans &#9654;</a>
                     </article>
 
                     <!-- 2.Marketing card -->
@@ -53,7 +66,7 @@
                         <img src="images/marketing.jpg" alt="marketing-banner" class="marketing-banner">
                         <h3>Marketing</h3>
                         <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="" class="cta-button">Marketing Plans</a>
+                        <a href="" class="cta-button">Marketing Plans &#9654;</a>
                     </article>
 
                     <!-- 3.Video Production card -->
@@ -61,7 +74,7 @@
                         <img src="images/video.jpg" alt="video-production-banner" class="video-production-banner">
                         <h3>Video Production</h3>
                         <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="" class="cta-button">Video Plans</a>
+                        <a href="" class="cta-button">Video Plans &#9654;</a>
                     </article>
 
                     <!-- 4.Web Development card -->
@@ -69,7 +82,7 @@
                         <img src="images/web.jpg" alt="web-development-banner" class="web-development-banner">
                         <h3>Web Development</h3>
                         <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="" class="cta-button">Web Plans</a>
+                        <a href="" class="cta-button">Web Plans &#9654;</a>
                     </article>
 
                     <!-- 5.Print card -->
@@ -77,36 +90,42 @@
                         <img src="images/print.jpg" alt="print-banner" class="print-banner">
                         <h3>Print Services</h3>
                         <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="" class="cta-button">Print Plans</a>
+                        <a href="" class="cta-button">Print Plans &#9654;</a>
                     </article>
 
                     <!-- 6.Our vision card -->
-                    <article class="our-vision">
-                        <img src="images/vision.jpg" alt="our-vision-banner" class="our-vision-banner">
-                        <h3>Our Vision</h3>
-                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="" class="cta-button">Learn More</a>
-                    </article>
-                    </article>
+                    <div class="vision-container">
+                        <article class="our-vision">
+                            <img src="images/vision.jpg" alt="our-vision-banner" class="our-vision-banner">
+                            <h3>Our Vision</h3>
+                            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="cta-button">Learn More &#9654;</a>
+                        </article>
+                    </div>
+                    
                 </div>  
             </section>
 
             <section class="section3">
                 <h2>Our Team</h2>
                 <!-- John Doe card -->
-                    <article class="John">
+                    <article class="john">
                         <img src="images/john.jpg" alt="john-banner" class="john-banner">
-                        <h3>John Doe</h3>
-                        <h4>CEO and Co-owner</h4>
-                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="john-info">    
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+                            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
                     </article>
                 
                 <!-- Bob Rite card -->
-                    <article class="Bob">
+                    <article class="bob">
                         <img src="images/bob.jpg" alt="bob-banner" class="bob-banner">
-                        <h3>Bob Rite</h3>
-                        <h4>CFO and Co-Owner</h4>
-                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div  class="bob-info">
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-Owner</h4>
+                            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
                     </article>
             </section> 
             
@@ -124,22 +143,6 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
                         <button type="submit">Send</button>
                     </form>
-                </article>
-
-                <!-- location -->
-                <article class="location">
-                    <h3>Location</h3>
-                    <div class="map-container">
-                    <iframe 
-                    src="https://www.google.com/maps/" 
-                    width="600" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    </div>
                 </article>
 
                 <!-- hours of operation -->
@@ -164,6 +167,24 @@
                         </tbody>
                     </table>
                 </article>
+
+                <!-- location -->
+                <article class="location">
+                    <h3>Location</h3>
+                    <div class="map-container">
+                    <iframe 
+                    src="https://www.google.com/maps/" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </article>
+
+                
             </section>                
         </main>
 

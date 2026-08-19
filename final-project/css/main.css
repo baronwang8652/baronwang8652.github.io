@@ -1,0 +1,801 @@
+/* 
+Reset CSS v2.0 |
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========================================
+   UNIVERSAL SETTING
+   ======================================== */
+:root {
+  --primary-color: #c78c06;
+  --bg-light: #ffe6ac;
+  --text-dark: #222;
+  --white: #ffffff;
+  --font-main: 'Open Sans', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: var(--font-main);
+	color: var(--text-dark);
+	line-height: 1.6;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+/* ==========================================
+   Navbar Layout
+   ========================================== */
+
+.nav {
+	display: flex;
+  	flex-direction: column;
+  	background-color: var(--text-dark);
+  	padding: 1rem;
+}
+
+.nav li {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	list-style: none;
+	gap: 1rem;
+}
+
+.nav li a {
+	color: var(--primary-color);
+	text-decoration: none;
+	flex-grow: 1;
+}
+
+.nav li:hover {
+	background-color: var(--primary-color);
+}
+
+.nav li:hover a {
+	color: var(--text-dark);
+}
+
+.logo-area {
+	background-color: var(--primary-color);
+}
+
+.logo {
+	width: 15%;
+	height: auto;
+	margin-bottom: 1rem;
+	background-color: var(--primary-color);
+}
+
+.search-bar {
+	display: flex;
+	width: 100%;
+}
+.search-input {
+	flex-grow: 1;
+}
+
+/* ==========================================
+   main banner Layout
+   ========================================== */
+
+.main-banner-container {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	overflow: hidden;
+}
+
+.main-banner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.overlay {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	min-height: 60vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: var(--white);
+	padding: 2.5rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.overlay h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+.overlay p {
+	font-size: 1rem;
+	margin: 1rem;
+}
+
+.cta-button {
+	display: inline-block;
+	background-color: var(--primary-color);
+	color: black;
+	padding: 2rem 1.5rem;
+	text-decoration: none;
+	margin: 0 1rem;
+}
+
+/* ==========================================
+   about us Layout
+   ========================================== */
+
+.section1 {
+	background-color: var(--bg-light);
+}
+
+.about-us-container {
+	padding: 1rem;
+}
+
+.section1 h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0 1rem;
+}
+
+.section1 p {
+	font-size: 1rem;
+	margin: 0 1rem;
+}
+
+/* ==========================================
+   our services - digital transformation Layout
+   ========================================== */
+
+.section2 {
+	padding: 2rem 0;
+
+}
+
+.section2 h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0 1rem;
+}
+
+.section2 .digital-transformation {
+	font-size: 1rem;
+	background-color: var(--bg-light);
+	margin: 0 1rem;
+
+}
+
+.digital-transformation img {
+	width: 100%;
+	height: auto;
+}
+
+.digital-transformation h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+.digital-transformation p {
+	font-size: 1rem;
+	margin: 1rem;
+}
+
+.digital-transformation .cta-button {
+	display: inline-block;
+	background-color: #222;
+	color: white;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	margin: 0 1rem 1rem 1rem;
+}
+
+/* ==========================================
+   our services - marketing Layout
+   ========================================== */
+.section2 .marketing {
+	font-size: 1rem;
+	background-color: var(--bg-light);
+	margin: 1rem 1rem;
+}
+
+.marketing img {
+	width: 100%;
+	height: auto;
+}
+
+.marketing h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+.marketing p {
+	font-size: 1rem;
+	margin: 1rem;
+}
+
+.marketing .cta-button {
+	display: inline-block;
+	background-color: #222;
+	color: white;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	margin: 0 1rem 1rem 1rem;
+}
+
+
+/* ==========================================
+   our services - video production Layout
+   ========================================== */
+.section2 .video-production {
+	font-size: 1rem;
+	background-color: var(--bg-light);
+	margin: 1rem 1rem;
+
+}
+
+.video-production img {
+	width: 100%;
+	height: auto;
+}
+
+.video-production h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+.video-production p {
+	font-size: 1rem;
+	margin: 1rem;
+}
+
+.video-production .cta-button {
+	display: inline-block;
+	background-color: #222;
+	color: white;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	margin: 0 1rem 1rem 1rem;
+}
+
+/* ==========================================
+   our services - web development Layout
+   ========================================== */
+.section2 .web-development {
+	font-size: 1rem;
+	background-color: var(--bg-light);
+	margin: 1rem 1rem;
+
+}
+
+.web-development img {
+	width: 100%;
+	height: auto;
+}
+
+.web-development h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+.web-development p {
+	font-size: 1rem;
+	margin: 1rem;
+}
+
+.web-development .cta-button {
+	display: inline-block;
+	background-color: #222;
+	color: white;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	margin: 0 1rem 1rem 1rem;
+}
+
+
+/* ==========================================
+   our services - print Layout
+   ========================================== */
+
+.section2 .print {
+	font-size: 1rem;
+	background-color: var(--bg-light);
+	margin: 1rem 1rem;
+
+}
+
+.print img {
+	width: 100%;
+	height: auto;
+}
+
+.print h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+.print p {
+	font-size: 1rem;
+	margin: 1rem;
+}
+
+.print .cta-button {
+	display: inline-block;
+	background-color: #222;
+	color: white;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	margin: 0 1rem 1rem 1rem;
+}
+
+/* ==========================================
+   our services - our version Layout
+   ========================================== */
+
+.vision-container {
+	position: relative;
+	margin: 1rem 1rem;
+}
+
+.vision-container img {
+	position: absolute;
+	width: 100%;
+	height: 50vh;
+}
+
+.vision-container h3 {
+	position: relative;
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--white);
+	padding: 1rem 0 1rem 1rem;
+	margin:1rem 0 1rem 1rem;
+}
+
+.vision-container p {
+	position: relative;
+	font-size: 1rem;
+	color: var(--white);
+	padding: 1rem 0 1rem 1rem;
+	margin: 0 1rem 1rem 1rem;
+}
+
+.vision-container .cta-button {
+	position: relative;
+	display: inline-block;
+	background-color: #222;
+	color: white;
+	padding: 1rem 1.5rem;
+	border: 3px solid var(--bd-primary-color);
+	padding: 1rem 1rem 1rem 1rem;
+	margin: 0 1rem 1rem 2rem;
+}
+
+/* ==========================================
+   our team layout
+   ========================================== */
+
+.section3 {
+	margin: 0 1rem 1rem 1rem;
+}
+
+.section3 .john {
+	background-color: var(--bg-light);
+	margin: 1rem 1rem;
+}
+
+.section3 h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0 1rem 0 1rem;
+}
+
+.section3 h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--text-dark);
+	margin: 0 1rem 0 1rem;
+}
+
+.section3 h4 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--text-dark);
+	margin: 0 1rem 0 1rem ;
+	border-bottom: 3px solid var(--primary-color);
+}
+
+.section3 p {
+	font-size: 1rem;
+	padding:0 1rem 1rem 0;
+	margin: 0 1rem 1rem 1rem;
+}
+
+.section3 img {
+	width: 100%;
+	height: auto;
+}
+
+.section3 .bob {
+	background-color: var(--bg-light);
+	margin: 1rem 1rem;
+}
+
+/* ==========================================
+   contact us layout
+   ========================================== */
+
+.section4 {
+	margin: 0 1rem 1rem 1rem;
+}
+
+.section4 h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0 1rem 0 1rem;
+}
+
+.section4 h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--text-dark);
+	margin: 0 1rem 0 1rem;
+}
+
+.section4 form label,button {
+	display: block;
+	margin: 0 1rem;
+}
+
+.section4 form input, textarea {
+	margin: 0 1rem;
+	width: 100%;
+}
+
+.section4 form textarea {
+	height: 30vh;
+}
+
+.section4 form button {
+	background-color: var(--text-dark);
+	color:#c78c06 ;
+	padding: 0.5rem 1rem;
+	margin: 0 1rem;
+}
+
+/* ==========================================
+   Hours of Operation layout
+   ========================================== */
+
+.section4 table {
+	width: 100%;
+	margin: 0 1rem 1rem 1rem;
+	border-collapse: collapse;
+	border: 1px solid var(--text-dark);
+}
+
+.section4 th, td {
+	padding: 0.5rem;
+	
+	border: 1px solid var(--text-dark);
+}
+
+.section4 th {
+	background-color: var(--bg-light);
+	text-align: center;
+}
+
+/* ==========================================
+   location layout
+   ========================================== */
+
+.section4 iframe {
+	width: 100%;
+	height: 450px;
+	margin: 0 1rem 1rem 1rem;
+	border: 1px solid var(--text-dark);
+}
+
+/* ==========================================
+   footer layout
+   ========================================== */
+footer {
+	background-color: var(--text-dark);
+	color: #c78c06;
+	margin: 0 0 1rem 2rem;
+	padding: 1rem 1rem 1rem 0;
+	text-align: left;
+}
+
+/* ==========================================
+   min-width media query 
+   ========================================== */
+@media screen and (min-width: 760px) {
+	.nav {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  	}
+
+	.nav li {
+		flex-direction: row;
+	}
+
+	.logo {
+		width: 120px;
+		margin-bottom: 0;
+	}
+
+	.search-bar {
+		width: auto;
+	}
+
+	/* ----------------------------------------
+     2. About Us (float)
+     ---------------------------------------- */
+	.section1 {
+		
+		align-items: center;
+		gap: 2rem;
+		padding: 1rem 3rem 3rem 3rem;
+	}
+
+	.section1 img {
+		float: left;
+		width: 50%;
+		height: auto;
+		margin-right: 2rem;
+	}
+
+	.about-us-container {
+		flex: 1;
+		padding: 0;
+	}
+
+	.section1 h2, .section1 p {
+		flex: 1;
+		margin: 0;
+	}
+	
+	/* ----------------------------------------
+     3. Our Services (CSS Grid)
+     ---------------------------------------- */
+	.our-service {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 1.5rem;
+		padding: 1rem;
+	}
+
+	
+	.section2 h2 {
+		grid-column: 1 / -1;
+		margin: 0 0 1rem 0;
+	}
+
+	.section2 .digital-transformation,.section2 .marketing,.section2 .video-production,
+	.section2 .web-development,.section2 .print,.vision-container {
+		margin: 0; 
+	}
+	.section2 .digital-transformation,.section2 .marketing {
+		grid-column: span 3;
+ 	}
+
+	.section2 .video-production,.section2 .web-development,.section2 .print {
+		grid-column: span 2;
+  	}
+
+	.section2 .vision-container {
+		grid-column: span 6;
+  	}
+
+	.section2 article {
+		display: flex;
+		flex-direction: column;
+		height: 100%; 
+	}
+
+	.section2 .cta-button {
+		display: inline-block;
+		padding: 1rem 1.5rem;
+		text-decoration: none;
+		text-align: center;
+		margin-top: auto; 
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.vision-container .cta-button {
+		margin: 0 0 1rem 2rem;
+		width: fit-content;
+		align-self: flex-start;
+		display: inline-block;
+		position: relative;
+		z-index: 2; 
+	}
+
+	/* ----------------------------------------
+		4. Our Team (CSS Grid)
+		---------------------------------------- */
+	
+	.section3 {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		margin: 2rem 1rem;
+  	}
+
+	
+	.section3 h2 {
+		grid-column: 1 / -1;
+		margin-bottom: 1rem;
+	}
+
+	
+	.section3 article {
+		display: flex;
+		flex-direction: row;
+		margin: 0; 
+	}
+
+	
+	.section3 article img {
+		width: 50%;
+		object-fit: cover;
+	}
+
+	.section3 article .team-content,.section3 article h3,.section3 article h4,.section3 article p {
+		flex: 1;
+	}
+
+	.section3 .john {
+		margin:0;
+	}
+	
+	.section3 .bob {
+		flex-direction: row-reverse;
+		margin:0;
+	}
+
+
+	/* ----------------------------------------
+		5. Contact Us (CSS Grid)
+		---------------------------------------- */
+	.section4 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: 
+			"title    title"
+			"message  location"
+			"hours    hours";
+		gap: 1.5rem;
+		margin: 2rem 1rem;
+	}
+
+	.section4 h2 {
+		grid-area: title;
+		margin: 0 0 1rem 0;
+  	}
+
+	.section4 h3 {
+		
+		margin: 0 0 1rem 0;
+  	}
+
+	.section4 .message {
+		grid-area: message;
+    	margin: 0;
+	}
+
+	.section4 .location {
+		grid-area: location;
+    	margin: 0;
+	}	
+
+	.section4 .hours-of-operation {
+		grid-area: hours;
+    	margin: 0;	
+	}
+
+	.section4 form label,.section4 form button,.section4 form input,.section4 form textarea,
+	.section4 table,.section4 iframe {
+		margin: 0 0 1rem 0;
+		width: 100%; 
+	}
+
+	.section4 form button {
+		margin: 0;
+		width: auto; 
+		padding: 0.5rem 2rem; 
+  }
+
+	/* ----------------------------------------
+		6. Footer
+		---------------------------------------- */
+	footer {
+		margin: 0;
+		padding: 1.5rem;
+		text-align: center;
+	}
+}
